@@ -1,8 +1,20 @@
 from flask import Flask
 from flask import render_template
-# 랜더 템플릿은 현재 실행되고 있는 파일과 같은 경로에 있는 templates 폴더 내 HTML문서를 불러오는 모듈
+import pymysql as ps
 
 app=Flask(__name__)
+
+conn=ps.connect(host='localhost', user='root', passwd='1234', db='mysql')
+curs=conn.cursor()
+#curs=juso_db.cursor(pymysql.cursors.DictCursor)
+
+# 한 사이클 
+# sql = " "
+# curs.execute(sql)
+# result = curs.fetchall()
+# conn.commit()
+# curs.close()
+# conn.close()
 
 @app.route('/', methods=['GET', "POST"])
 def main():

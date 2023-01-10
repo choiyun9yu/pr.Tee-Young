@@ -8,6 +8,8 @@
     rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
     crossorigin="anonymous">
+    <!-- 아이콘즈 적용 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- 중복 되면 더 밑에 적은 것으로 덮어쓰기 된다. -->
     <link rel="stylesheet" href='../static/css/main.css'>
     <!-- 경로 안잡힐 때 html 내부에서 css 설정 -->
@@ -26,50 +28,321 @@
         rel="stylesheet">
   </head>
   <body>
-      <!-- 해더 영역 시작 -->
-      <header class='d-flex flex-column justify-content-center align-items-center vh-100 text-white'>
-          <h1 class="display-3 fw-bold mb-5">Tea & Young</h1>
-          <h4 class="fs-3 mb-2">차와 젊음 그리고 만남</h4>
-          <!-- lead : 일반 p태그보다 조금 더 부각시키고 싶을 때 사용 -->
-          <p class="lead mb-5">기분 좋은 만남을 위한 가장 좋은 방법</p>
-          <!-- 버튼 타입 submit전송 reset초기화 button기타 -->
-          <button type='button' class="btn btn-outline-warning rounded-pill">대표 상품 보기</button>
-      </header>
-      <!-- 해더 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 네비게이션바 영역 시작 -->
 
-    <!-- 프로필 영역 시작 -->
-    <section class="container py-5" id="about-profile">
-    <div class="text-center py-5">
-      <h2>CEO Profile</h2>
-      <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi.</p>
-    </div>
-    <div>
-      <div class="row justify-content-center align-items-center mb-5">
-        <div class="col-md-5">
-          <!-- img-fluid : 사진을 반응형 객체로 만들어 준다 -->
-          <img src="../static/img/ceo.png" alt="ceo profile ficture" class="img-fluid">
+    <!-- 네비게이션바 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 해더 영역 시작 -->
+    <header class='d-flex flex-column justify-content-center align-items-center vh-100 text-white'>
+        <h1 class="display-3 fw-bold mb-5">Tea & Young</h1>
+        <h4 class="fs-3 mb-2">차와 젊음 그리고 만남</h4>
+        <!-- lead : 일반 p태그보다 조금 더 부각시키고 싶을 때 사용 -->
+        <p class="lead mb-5">기분 좋은 만남을 위한 가장 좋은 방법</p>
+        <!-- 버튼 타입 submit전송 reset초기화 button기타 -->
+        <button type='button' data-bs-toggle="modal" data-bs-target="#loginModal" class="btn btn-outline-warning rounded-pill">로그인 | 회원가입</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header text-dark">
+                <h1 class="modal-title fs-5">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+               <div class="container overflow-hidden">
+                <div class="modal-body text-dark">
+                  <div class="row">
+                    <div class="col-3 text-end">
+                      <p>아 이 디</p>
+                      <p>비밀번호</p>
+                    </div>
+                    <div class="col-8">
+                      <input class="mb-2 text-muted" type="text" value="아 이 디">
+                      <input class="text-muted" type="password" value="비 밀 번 호">
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="modal-footer">
+                <a href="#" target="_blank" class="btn btn-dark">회원가입</a>
+                <button type="submit" value="내용전달" class="btn btn-primary">로그인</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-7 col-lg-5 mt-sm-5">
-          <h3 class="hw-bold mb-3">Yang Tae Young</h3>
-          <!-- 줄간격 lh-속성 -->
-          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
-          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
+    </header>
+    <!-- 해더 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ --> 
+    <!-- 서비스 영역 시작 -->
+    <section class="container overflow-hidden py-5" id="service">
+      <div class="text-center py-5">
+        <h2 class="fw-bold mb-3">Tea&Young 서비스</h2>
+        <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="row mb-5 g-4">
+        <div class="col-md-6">
+          <!-- 카드호버는 별도로 css에서 구현해서 쓴다.  -->
+          <div class="card-hover shadow rounded p-4">
+            <div class="d-flex align-items-center py-3">
+              <img src="../static/img/mbti.jpeg" alt=" MBTI로 차 추천 서비스" class="rounded-circle img-fluid">
+              <div class='ms-3'>
+                <h3 class="fw-bold">MBTI 차 추천</h3>
+                <p class="text-muted">MBTI를 입력해주시면 어울리는 차를 추천해드려요.</p>
+              </div>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque dolorem sint possimus nobis, nulla, facilis nemo molestiae et totam labore aut asperiores laboriosam facere.
+          </div>          
+        </div>
+        <div class="col-md-6">
+          <div class="card-hover shadow rounded p-4">
+            <div class="d-flex justify-content-end align-items-center py-3">
+              <div class='text-end me-3'>
+                <h3 class="fw-bold">차 오마카세 예약</h3>
+                <p class="text-muted">티 소믈리에가 직접 다양한 커스텀 차를 우려드려요.</p>
+              </div>
+              <img src="../static/img/tea.jpeg" alt=" MBTI로 차 추천 서비스" class="rounded-circle img-fluid">
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis neque dolorem sint possimus nobis, nulla, facilis nemo molestiae et totam labore aut asperiores laboriosam facere.
+            </div>          
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row"></div>  
     </section>
-    <!-- 프로필 영역 끝 -->
+    <!-- 서비스 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 포트폴리오 영역 시작 -->
+    <section class="bg-dark py-5" id="portfolio">
+      <div class="container overflow-hidden">
+        <div class="text-center text-white py-5">
+          <h2 class="fw-bold mb-3">Tea 상품 설명</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </div>
+          <div class="row pb-5 g-4"> <!-- 거터로 위아래 이미지 간격주고 거터가 3 이상이면 컨테이너에 오버플로우 옵션 삽입 -->
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/그린티.png" alt="그린티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/블랙티.png" alt="블랙티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/루이보스.png" alt="루이보스"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/민트티.png" alt="민트티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/캐모마일.png" alt="캐모마일"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="../static/img/히비스커스.png" alt="히비스커스"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 포트폴리오 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 블로그 영역 시작 -->      <!-- https://brunch.co.kr/@taeyoung0508 -->
+    <section class="container overflow-hidden py-5" id="blog">
 
+      <div class="text-center py-5">
+          <h2 class="fw-bold">Tae Young Brunch</h2>
+          <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, adipisci?</p>
+      </div>
 
+      <div class="row pb-5 gy-4">
+          <div class="col-sm-6 col-lg">
+              <div class="card">
+                  <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/CshJamgo-anhWd8kbFC5ixLAqhQ.jpg" 
+                  alt="블로그 1" class="card-img-top" id="blog_img">
+                  <div class="card-body text-center">
+                      <h3 class="card-title fs-5">짧아서 아쉬운 계절</h3>
+                      <p class="card-text text-muted">
+                        사계_[봄] 감질나는 계절의 차 감질난다는 표현 있잖아요. 무언가를 더 원하는데 원하는 만큼 얻지를 못할 때 쓰는 표현이요. 사전에는 ‘바라는 정도에 못 미쳐 애가 타다’는 말로...</p>
+                      <a href="https://brunch.co.kr/@taeyoung0508/48" target="blank" class="btn btn-warning btn-sm">read more</a>
+                  </div>
+              </div>
+          </div>
 
+          <div class="col-sm-6 col-lg">
+              <div class="card">
+                  <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/KQkVY1NrMAjjESq-FB9acgzU5CE.jpg" 
+                  alt="블로그 2" class="card-img-top" id="blog_img">
+                  <div class="card-body text-center">
+                      <h3 class="card-title fs-5">보리차는 차가 아니다</h3>
+                      <p class="card-text text-muted">
+                        차례의 차가 茶라니?!_[티소믈리에가 들려주는 차 이야기] 어릴 적 할머니 집에서 주전자에 팔팔 끓여놓은 보리차를 기억하시나요? 그리고 한 김 식힌 뒤 델몬트 오렌지 주스...</p>
+                      <a href="https://brunch.co.kr/@taeyoung0508/43" target="blank" class="btn btn-warning btn-sm">read more</a>
+                  </div>
+              </div>
+          </div>
 
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/mp3Nmdq63PCZai8iIqLv8P8jLjw.jpg" 
+                alt="블로그 2" class="card-img-top" id="blog_img">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-5">작은 것들의 신</h3>
+                    <p class="card-text text-muted">
+                      사계_[가을] 펜과 카메라의 힘, 그리고 올곧은 모첨 신문방송학과 계열을 전공해 카메라와 펜이 가진 힘을 잘 알고 있습니다. 이 힘은 항상 바른 곳에 사용되지만은 않는다는...</p>
+                    <a href="https://brunch.co.kr/@taeyoung0508/46" target="blank" class="btn btn-warning btn-sm">read more</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/0GyPp5Q579_9lSBcN5ygDxuWLc4.jpg" 
+                alt="블로그 2" class="card-img-top" id="blog_img">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-5">민초는 죄가 없다</h3>
+                    <p class="card-text text-muted">
+                      사계_겨울 치키치키 차카차카 민트초코 초.. 민트초코를 좋아하고, 민트초코를 좋아하는 사람을 좋아합니다. 그렇다고 민트초코를 싫어하는 사람을 싫어하진 않습니다. 하지만...</p>
+                    <a href="https://brunch.co.kr/@taeyoung0508/40" target="blank" class="btn btn-warning btn-sm">read more</a>
+                </div>
+            </div>
+        </div>
 
+      </div>
+  </section>
+    <!-- 블로그 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 뉴스 영역 시작 --> 
+    <section class="py-5" id="news">
+      <div class="container">
+        <div class="row p-4">
+          <div class="col-lg-9 text-white">
+            <h2 class="fw-bold mb-3">Lastest Upload</h2>
+            <p class="lead"> 티 소믈리에는 무엇일까요? 한국티소믈리에연구원과 함께 알아봅시다.</p>
+          </div>
+          <div class="col-lg-3">
+            <!-- 모달은 현재페이지에 새로운 레이어를 깔아서 만드는 페이지 -->
+            <!-- 버튼으로 모달창 띄우기 data-bs-toggle="modal   어떤 모달을 띄울지? data-bs-target="#exampleModal"> -->
+            <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal" 
+            data-bs-target="#newsModal">
+              뉴스 보기
+            </button>
 
+            <!-- 버튼을 누르면 띄워줄 모달 fade는 모달 등장효과 중 하나-->
+            <div class="modal fade" id="newsModal">
+              <!-- modal-dialog 모달 다이얼로그는 모달창의 크기 위치를 잡아주는 것 -->
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <!-- 모달창의 스타일이 담긴 곳 -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5">What is a Tea Sommelier?</h1>
+                    <!-- 닫는 버튼 모양 만드는 클라스 / 모달 닫는 기능 data-bs-dismiss="modal"-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- ratio 유튜브 비디오를 반응형으로 만들어준다 -->
+                    <div class="ratio ratio-16x9">
+                      <!-- 유튜브 비디오 가져오는 방법 : 공유하기-퍼가기-iframe 복사 -->
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/AZN3m-Zasf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 뉴스 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 프로필 영역 시작 -->
+    <section class="container py-5" id="about-profile">
+      <div class="text-center py-5">
+        <h2>CEO Profile</h2>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi.</p>
+      </div>
+      <div>
+        <div class="row justify-content-center align-items-center mb-5">
+          <div class="col-md-5">
+            <!-- img-fluid : 사진을 반응형 객체로 만들어 준다 -->
+            <img src="../static/img/ceo.png" alt="ceo profile ficture" class="img-fluid">
+          </div>
+          <div class="col-md-7 col-lg-5 mt-sm-5">
+            <h3 class="hw-bold mb-3">Yang Tae Young</h3>
+            <!-- 줄간격 lh-속성 -->
+            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
+            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>  
+      </section>
+      <!-- 프로필 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- SNS 링크 영역 시작 -->
+      <section class="py-5" id="sns-link">
+        <div class="container text-center text-white">
+            <h2 class="fw-bold mn-3">Tea&Young SNS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae.</p>
+          <!-- w-숫자 : 부모요소대비 25퍼 50퍼 75퍼 100퍼 너비 조정 / h-숫자는 높이-->  
+          <div class="d-flex justify-content-evenly px-5 mt-4 w-50 m-auto">
+            <!-- 부트스트랩 제공 아이콘 활용, 아이콘은 폰트 스타일과 같은 방법으로 변경 가능하다 -->
+            <!-- 새탭에서 열고 싶다면  target="blank" 옵션을 넣어주면 된다.-->
+            <a href="https://www.youtube.com/" 
+            class="btn btn-danger rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-youtube"></i></a>
 
+            <a href="https://www.facebook.com/people/%EC%96%91%ED%83%9C%EC%98%81/100003572419803/" 
+            class="btn btn-primary rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fyangtae000%3Ffbclid%3DIwAR1GcLtJ8O3ETh76HglvgRrKH8CA4VcbAgAn8t1OTSjdl7JkX-WvJZCF2Cc&h=AT2ufFsfY5RT9nOFHfLUg7YfyGaoxTEQJqaaLZBZ7GaYlBaHJsE3NPfP4xI2cKkH6Hz6Qe8rNm4_TSbo4rWt2AhcPiWwfty7nT1aCkMjGdTenL2JC8LkwDuYTGKLpcCydhB3yJuZMg" 
+            class="btn btn-warning rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+    <!-- SNS 링크 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 연락처 영역 시작 -->
+    <section class="container overflow-hidden py-5 text-center" id="contact">
 
+      <div class="py-5">
+          <h2 class="fw-bold">Contact</h2>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
 
-    
+      <div class="row py-5 gy-3">
+          <div class="col-md-4">
+              <!-- 카드모양 만들기: div에 shadow 설정해주기  -->
+              <div class="shadow p-4 border-bottom border-4 border-warning">
+                <i class="bi bi-envelope-at-fill text-warning fs-5"></i>
+                <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                <!-- 구분선 -->
+                <hr>
+                <p class="text-muted">taeyoung0508@google.com</p>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="shadow p-4 border-bottom border-4 border-success">
+                  <i class="bi bi-telephone-fill fs-5 text-success"></i>
+                  <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                  <hr>
+                  <p class="text-muted">010-2280-5957</p>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="shadow p-4 border-bottom border-4 border-warning">
+                  <i class="bi bi-building-fill fs-5 text-warning"></i>
+                  <h3 class="fw-bold fs-5 py-2">주소</h3>
+                  <hr>
+                  <p class="text-muted">서울시 강남구 어딘가</p>
+              </div>
+          </div>
+      </div>
+        </div>
+      </section>
+    <!-- 연락처 영역 끝 -->
+<!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+        <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by <a
+                    href="http://github.com/choiyun9yu" target="_blank"
+                    class="gugi-font link-warning text-decoration-none">yun9yu</a></p>
+      </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
     crossorigin="anonymous"></script>

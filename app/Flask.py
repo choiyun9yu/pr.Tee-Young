@@ -1,8 +1,10 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, request, render_template, redirect
 import pymysql as ps
 
-app=Flask(__name__)
+# 이미지 경로 적용하기
+# flask app에서 static_url_path="/static" 옵션
+# html에서 {{url_for('static', filename='파일명.확장자')}} 옵션 
+app=Flask(__name__, static_url_path="/static")
 
 conn=ps.connect(host='localhost', user='root', passwd='1234', db='mysql')
 curs=conn.cursor()
@@ -18,6 +20,6 @@ curs=conn.cursor()
 
 @app.route('/', methods=['GET', "POST"])
 def main():
-    return render_template(['main.html'])
+    return render_template('main.html')
 
-app.run(debug=True)
+app.run(port=5500,debug=True)

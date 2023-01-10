@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tea&Young</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <!-- 중복 되면 더 밑에 적은 것으로 덮어쓰기 된다. -->
+    <link rel="stylesheet" href='../static/css/main.css'>
+    <!-- 경로 안잡힐 때 html 내부에서 css 설정 -->
+    <!-- <style>
+      header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), url(../static/img/header.jpeg);
+        background-size: cover;
+        background-position: center top;
+      }
+    </style> -->
+    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;700&display=swap"
+        rel="stylesheet">
+  </head>
+  <body>
+      <!-- 해더 영역 시작 -->
+      <header class='d-flex flex-column justify-content-center align-items-center vh-100 text-white'>
+          <h1 class="display-3 fw-bold mb-5">Tea & Young</h1>
+          <h4 class="fs-3 mb-2">차와 젊음 그리고 만남</h4>
+          <!-- lead : 일반 p태그보다 조금 더 부각시키고 싶을 때 사용 -->
+          <p class="lead mb-5">기분 좋은 만남을 위한 가장 좋은 방법</p>
+          <!-- 버튼 타입 submit전송 reset초기화 button기타 -->
+          <button type='button' class="btn btn-outline-warning rounded-pill">대표 상품 보기</button>
+      </header>
+      <!-- 해더 영역 끝 -->
+
+    <!-- 프로필 영역 시작 -->
+    <section class="container py-5" id="about-profile">
+    <div class="text-center py-5">
+      <h2>CEO Profile</h2>
+      <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi.</p>
+    </div>
+    <div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-md-5">
+          <!-- img-fluid : 사진을 반응형 객체로 만들어 준다 -->
+          <img src="../static/img/ceo.png" alt="ceo profile ficture" class="img-fluid">
+        </div>
+        <div class="col-md-7 col-lg-5 mt-sm-5">
+          <h3 class="hw-bold mb-3">Yang Tae Young</h3>
+          <!-- 줄간격 lh-속성 -->
+          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
+          <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid error debitis a! Ad laboriosam quae rerum accusantium modi voluptates molestias accusamus facere. Soluta, cum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>  
+    </section>
+    <!-- 프로필 영역 끝 -->
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

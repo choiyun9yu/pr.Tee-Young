@@ -1,0 +1,50 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Gugi', cursive;
+}
+
+header{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0,0,0,.2)), url(img/header.jpg);
+    /* 화면 전체 채우기 */
+    background-size: cover;
+    /* 백그라운드 출력위치 센터 탑*/
+    background-position: center top;
+    background-attachment: fixed;
+  }
+
+/* 아이디는 앞에 #을 써서 표시해주면 된다. */
+#sns-link{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,.2)), url(img/sns-bg.png);
+    /* 화면 전체 채우기 */
+    background-size: cover;
+    /* 백그라운드 출력위치 센터 */
+    background-position: center;
+    /* 배경위미지 고정 (스크롤 따라서 같이 움직임) */
+    background-attachment: fixed;
+  }
+
+
+/* 카드호버 기능 여기서 구현 */
+/* 호버는 스타일을 항상 적용시키는 것이 아니라 마우스를 올리는 특정 상태에서만 동작하는 기능 */
+.card-hover:hover{
+  background-color: rgb(127,255,212,0.2);
+}
+
+
+/* 뉴스 배경이미지 */
+#news{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,.2)), url(img/news.jpeg);
+  /* 화면 전체 채우기 */
+  background-size: cover;
+  /* 백그라운드 출력위치 센터 */
+  background-position: center;
+}
+
+#blog_img{
+  width : 100%;
+  height : 200px;
+  object-fit: cover;
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tea&Young</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;700&display=swap"
+        rel="stylesheet">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container">
+          <a class="gugi-font navbar-brand" href="#home">
+              <img src="img/logo.png" alt="로고">
+              Tea&Young</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+              aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nav-menu">
+              <ul class="navbar-nav ms-auto my-2">
+                  <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#service">서비스</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">상품소개</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#blog">브런치</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about_profile">브랜드 소개</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+    <header class='d-flex flex-column justify-content-center align-items-center vh-100 text-white' id="home">
+        <h1 class="display-3 fw-bold mb-5">Tea & Young</h1>
+        <h4 class="fs-3 mb-2">차, 그리고 만남</h4>
+        <p class="lead mb-5">기분 좋은 만남을 위한 가장 좋은 방법</p>
+        <button type='button' data-bs-toggle="modal" data-bs-target="#loginModal" class="btn btn-outline-warning rounded-pill">로그인 | 회원가입</button>
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header text-dark">
+                <h1 class="modal-title fs-5">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+               <div class="container overflow-hidden">
+                <div class="modal-body text-dark">
+                  <div class="row">
+                    <div class="col-3 text-end">
+                      <p>아 이 디</p>
+                      <p>비밀번호</p>
+                    </div>
+                    <div class="col-8">
+                      <input class="mb-2 text-muted" type="text" value="아 이 디">
+                      <input class="text-muted" type="password" value="비 밀 번 호">
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="modal-footer">
+                <a href="#" target="_blank" class="btn btn-dark">회원가입</a>
+                <button type="submit" value="내용전달" class="btn btn-primary">로그인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    <section class="container overflow-hidden py-5" id="service">
+      <div class="text-center py-5">
+        <h2 class="fw-bold mb-3">Tea&Young 서비스</h2>
+        <p class="lead text-muted">차, 차차 - 차를 통해 차차 나를 알아가는 시간</p>
+      </div>
+      <div class="row mb-5 g-4">
+
+        <div class="col-md-6">
+          <div class="card-hover shadow rounded p-4">
+            <div class="d-flex align-items-center py-3">
+              <img src="img/tea.jpeg" alt=" MBTI로 차 추천 서비스" class="rounded-circle img-fluid">
+              <div class='ms-3'>
+                <h3 class="fw-bold">원데이 클래스 예약</h3>
+                <p class="text-muted lead">티 소믈리에 & 티 블렌딩 과정</p>
+              </div>
+            </div>
+            내 삶도 조금 다채로웠으면, 나도 향기로운 사람이었으면하는 생각 한 번쯤 해본 적 있지 않으셨나요? 클래스를 통해 여러분이 지닌 향을 알게 되실 거예요.
+          </div>          
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-hover shadow rounded p-4">
+            <div class="d-flex justify-content-end align-items-center py-3">
+              <div class='text-end me-3'>
+                <h3 class="fw-bold"> MBT(ea)I 차 추천</h3>
+                <p class="text-muted lead">MBTI를 입력해주시면 어울리는 차를 추천해드려요.</p>
+              </div>
+              <img src="img/mbti.jpeg" alt=" MBTI로 차 추천 서비스" class="rounded-circle img-fluid">
+            </div>
+            내 성격과 취향에 알맞는 나의 MBT(ea)I는 무엇일까요?
+            티앤영에서 알려주는 티 큐레이션을 통해 조금 더 쉽고 재밌게 차에 입문하게 될거예요.
+            </div>          
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="bg-dark py-5" id="portfolio">
+      <div class="container overflow-hidden">
+        <div class="text-center text-white py-5">
+          <h2 class="fw-bold mb-3">Tea 상품 설명</h1>
+          <p class="lead">못난이 농산물과 친환경 소재로 만들어진 비건 블렌딩 티</p>
+        </div>
+          <div class="row pb-5 g-4">
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/green.png" alt="그린티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/black.png" alt="블랙티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/rui.png" alt="루이보스"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/mint.png" alt="민트티"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/camo.png" alt="캐모마일"></div>
+          <div class="col-sm-6 col-lg-4"><img class="img-fluid img-thumbnail" src="img/hibi.png" alt="히비스커스"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container overflow-hidden py-5" id="blog">
+      <div class="text-center py-5">
+          <h2 class="fw-bold">Tae Young Brunch</h2>
+          <p class="lead text-muted">브랜드 제품 스토리텔링</p>
+      </div>
+
+      <div class="row pb-5 gy-4">
+          <div class="col-sm-6 col-lg">
+              <div class="card">
+                  <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/cMvCvJfgBDeOUDUTN5xk1xkGvb4.jpg" 
+                  alt="블로그 1" class="card-img-top" id="blog_img">
+                  <div class="card-body text-center">
+                      <h3 class="card-title fs-5">애플힙 만들기 설명서</h3>
+                      <p class="card-text text-muted">
+                        운동을 정말 하긴 해야 하는데’ 라는 생각을 하며 정작 내 손에 든 건 덤벨이 아닌 휴대폰입니다. '덤벨말고 담배 아닌 게 어디야'라는 생각으로 합리화를 해대면서...</p>
+                      <a href="https://brunch.co.kr/@taeyoung0508/48" target="blank" class="btn btn-warning btn-sm">read more</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-lg">
+              <div class="card">
+                  <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/6PzV8djHaUNvbow5x3PV8psfAJw.jpg" 
+                  alt="블로그 2" class="card-img-top" id="blog_img">
+                  <div class="card-body text-center">
+                      <h3 class="card-title fs-5">한 여름밤의 꿈</h3>
+                      <p class="card-text text-muted">
+                        습기라고는 하나도 없고 오히려 에어컨 바람보다도 더 상쾌하고 청량하게 느껴질 때, 자주 있지 않아서 더 귀하고 좋은 날인 것 같아요. 그래서 그럴 때는 오히려...</p>
+                      <a href="https://brunch.co.kr/@taeyoung0508/43" target="blank" class="btn btn-warning btn-sm">read more</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/dh-8-VPLjhW0-uqK_dyFge2CPN0.jpg" 
+                alt="블로그 2" class="card-img-top" id="blog_img">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-5">착한 사람만 걸리는 병</h3>
+                    <p class="card-text text-muted">
+                      지하철에서 숨이 안 쉬어지고 쓰러져서 사람들 부축받고 앉아있다가 근처 역에서 내렸어. 집 근처 내과에 갔는데 병명을 모르겠다고 정신과를 가보라고 해서...</p>
+                    <a href="https://brunch.co.kr/@taeyoung0508/46" target="blank" class="btn btn-warning btn-sm">read more</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg">
+            <div class="card">
+                <img src="http://t1.daumcdn.net/brunch/service/user/aY5L/image/KEBFi-qu_ThYtA8CKpvGaN7tGqo.jpg" 
+                alt="블로그 2" class="card-img-top" id="blog_img">
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-5">내가 또 술을 마시면..</h3>
+                    <p class="card-text text-muted">
+                      네. 안녕하세요. 저는 사람이 아닙니다. 일단 소개를 먼저 하고 시작해야할 것 같아 이렇게 인사를 드리는데요. 다행히도 저와 같은 분들이 많이 계시는 것 같아...</p>
+                    <a href="https://brunch.co.kr/@taeyoung0508/40" target="blank" class="btn btn-warning btn-sm">read more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+
+    <section class="py-5" id="news">
+      <div class="container">
+        <div class="row p-4">
+          <div class="col-lg-9 text-white">
+            <h2 class="fw-bold mb-3">Lastest Upload</h2>
+            <p class="lead"> 티 소믈리에는 무엇일까요? 한국티소믈리에연구원과 함께 알아봅시다.</p>
+          </div>
+          <div class="col-lg-3">
+            <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal" 
+            data-bs-target="#newsModal">
+              뉴스 보기
+            </button>
+            <div class="modal fade" id="newsModal">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5">What is a Tea Sommelier?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/AZN3m-Zasf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container py-5" id="about_profile">
+      <div class="text-center py-5">
+        <h2 class="mb-4">about</h2>
+        <p class="lead text-muted mb-4">‘커피 한 잔 하자’는 말보다 ‘차 한 잔 하자’라는 말이 더 자연스러워지기를 바랍니다. </p>
+        <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-md-5">
+          <img src="img/brand333.jpeg" alt="ceo profile ficture" class="img-fluid">
+        </div>
+        </div>
+        <p class="lead text-muted mb-2">티(Tea) & 영(Young) Young Generation(젊은 세대)의 뜻을 포함하고 있는 ‘Young’,</p>
+        <p class="lead text-muted">Tea라는 단어와 함께 잘 어우러지길 바라는 마음을 담고 있습니다.</p>
+      </div>
+      <div class=" col-md-12">
+        <div class="row justify-content-center align-items-center mb-5">
+          <div class="col-md-5">
+            <img src="img/ceo3.jpeg" alt="ceo profile ficture" class="img-fluid">
+          </div>
+          </div>
+          <div class="text-center">
+            <h3 class="hw-bold mb-3">Yang Tae Young</h3>
+            <p class="lh-lg mb-0">티 소믈리에 (한국 티소믈리에 연구원)</p>
+            <p class="lh-lg mb-0">티 블렌딩 전문가 (한국 티소믈리에 연구원)</p>
+            <p class="lh-lg mb-0">티 블렌딩 특허 출원(2018)</p>
+            <p class="lh-lg mb-0">코리아 티챔피언십 블렌딩티 콘테스트 심사위원(2022)</p>
+            <br>
+            <div>
+            <p class="lh-lg text-center m-0">마케터로 일했지만, 현재는 글 쓰기를 좋아하는 티소믈리에입니다. </p>
+            <p class="lh-lg text-center m-0">스스로를 잘 아는 사람이라 생각했지만</p>
+            <p class="lh-lg text-center m-0">생각보다 모르는 점이 많았다는 걸 일깨워준 것이 차(茶)였습니다. </p>
+            <p class="lh-lg text-center m-0">차의 맛과 향을 탐구하다보니 </p>
+            <p class="lh-lg text-center m-0">제가 좋아하고 싫어하는 것이 무엇인지 잘 알게 됐고, </p>
+            <p class="lh-lg text-center m-0">결국 저라는 사람을 잘 알게 됐습니다. </p>
+            <p class="lh-lg text-center m-0">그간 모르고 지냈던 여러분의 향기를 차를 통해 알아갔으면 좋겠습니다. </p>
+           </div>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="row"></div>  
+      </section>
+
+
+      <section class="py-5" id="sns-link">
+        <div class="container text-center text-white">
+            <h2 class="fw-bold mb-5">Tea&Young SNS</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae.</p> -->
+          <div class="d-flex justify-content-evenly px-5 mt-4 w-50 m-auto">
+            <a href="https://www.youtube.com/" 
+            class="btn btn-danger rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-youtube"></i></a>
+
+            <a href="https://www.facebook.com/people/%EC%96%91%ED%83%9C%EC%98%81/100003572419803/" 
+            class="btn btn-primary rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fyangtae000%3Ffbclid%3DIwAR1GcLtJ8O3ETh76HglvgRrKH8CA4VcbAgAn8t1OTSjdl7JkX-WvJZCF2Cc&h=AT2ufFsfY5RT9nOFHfLUg7YfyGaoxTEQJqaaLZBZ7GaYlBaHJsE3NPfP4xI2cKkH6Hz6Qe8rNm4_TSbo4rWt2AhcPiWwfty7nT1aCkMjGdTenL2JC8LkwDuYTGKLpcCydhB3yJuZMg" 
+            class="btn btn-warning rounded-pill btn-lg px-4"
+            target="blank"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="container overflow-hidden py-5 text-center" id="contact">
+      <div class="py-3">
+          <h2 class="fw-bold">Contact</h2>
+          <!-- <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+      </div>
+
+      <div class="row py-5 gy-3">
+          <div class="col-md-4">
+
+              <div class="shadow p-4 border-bottom border-4 border-warning">
+                <i class="bi bi-envelope-at-fill text-warning fs-5"></i>
+                <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                <hr>
+                <p class="text-muted">taeyoung0508@naver.com</p>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="shadow p-4 border-bottom border-4 border-success">
+                  <i class="bi bi-telephone-fill fs-5 text-success"></i>
+                  <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                  <hr>
+                  <p class="text-muted">010-2280-5957</p>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="shadow p-4 border-bottom border-4 border-warning">
+                  <i class="bi bi-building-fill fs-5 text-warning"></i>
+                  <h3 class="fw-bold fs-5 py-2">주소</h3>
+                  <hr>
+                  <p class="text-muted">서울시 강남구 테헤란로 113 목화밀라트 1308</p>
+              </div>
+          </div>
+      </div>
+        </div>
+      </section>
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+        <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2023 Designed by <a
+                    href="http://github.com/choiyun9yu" target="_blank"
+                    class="gugi-font link-warning text-decoration-none">yun9yu</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

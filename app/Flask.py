@@ -22,4 +22,4 @@ curs=conn.cursor()
 def main():
     return render_template('main.html')
 
-app.run(host='192.168.219.106',port=5500,debug=True)
+app.run(host='192.168.219.106',port=5031,debug=True)

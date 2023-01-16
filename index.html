@@ -22,11 +22,17 @@
       <div class="container">
           <a class="gugi-font navbar-brand" href="#home">
               <img src="img/logo.png" alt="로고">
-              Tea&Young</a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
-              aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
-              <span class="navbar-toggler-icon"></span>
+              Tea&Young
+          </a>
+          <button 
+                class="navbar-toggler" 
+                type="button" d
+                ata-bs-toggle="collapse" 
+                data-bs-target="#nav-menu"
+                aria-controls="nav-menu" 
+                aria-expanded="false" 
+                aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="nav-menu">
@@ -55,24 +61,24 @@
                 <h1 class="modal-title fs-5">Login</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
-               <div class="container overflow-hidden">
+               <div class="container">
                 <div class="modal-body text-dark">
-                  <div class="row">
-                    <div class="col-3 text-end">
-                      <p>아 이 디</p>
-                      <p>비밀번호</p>
-                    </div>
-                    <div class="col-8">
-                      <input class="mb-2 text-muted" type="text" value="아 이 디">
-                      <input class="text-muted" type="password" value="비 밀 번 호">
-                    </div>
-                  </div>
+
+                    <form action="" class="text-start p-3">
+                      <div class="mb-3">
+                        <label class="form-label mb-1" for="user-name">아아디</label>
+                        <input class="form-control mb-3 border-dark" type="text" id="user-name" placeholder="아이디">
+                        <label class="form-label mb-1" for="user-password">비밀번호</label>
+                        <input class="form-control border-dark" type="password" id="user-password" placeholder="비밀번호">
+                      </div>
+                    </form>
                 </div>
               </div> 
               <div class="modal-footer">
-                <a href="#" target="_blank" class="btn btn-dark">회원가입</a>
-                <button type="submit" value="내용전달" class="btn btn-primary">로그인</button>
+                <a href="signin.html" target="_blank" class="btn btn-dark">회원가입</a>
+                <button type="submit" value="내용전달" class="btn btn-warning">로그인</button>
               </div>
+              
             </div>
           </div>
         </div>

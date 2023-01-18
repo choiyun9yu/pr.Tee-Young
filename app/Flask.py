@@ -20,6 +20,6 @@ curs=conn.cursor()
 
 @app.route('/', methods=['GET', "POST"])
 def main():
-    return render_template('main.html')
+    return render_template('index.html')
 
-app.run(host='192.168.219.106',port=5031,debug=True)
+app.run(host='localhost',port=5031,debug=True)

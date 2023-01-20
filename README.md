@@ -11,10 +11,13 @@
     - (Flask와 MariaDB 사용하여 Back-end 구축)
 
 # 핵심 개발 내용
-1. MBTI를 활용한 Tea 추천 시스템
-    - 특성 데이터는 사용자의 MBTI 라벨 데이터는 Tea인 추천 서비스 개발
+1. 챗봇 시스템
+    - 고객의 문의 사항을 처리할 수 있는 챗봇 서비스 개발
+
+2. MBTI를 활용한 Tea 추천 시스템
+    - 특성 데이터는 사용자의 MBTI 라벨 데이터는 Tea인 추천 서비스 개발 
     
-2. Tea 오마카세 예약 시스템
+3. Tea 오마카세 예약 시스템
     - 예약 서비스 개발
 
 - url : https://choiyun9yu.github.io/pr.Tee-Young/

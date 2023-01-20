@@ -99,26 +99,107 @@
             <div class='ms-3'>
               <h3 class="fw-bold">원데이 클래스 예약</h3>
               <p class="text-muted lead">티 소믈리에 & 티 블렌딩 과정</p> 
-              <a class="float-right btn btn-warning" target="blank" href="https://whattime.co.kr/yun9yu">예약하기</a>
+              <!-- 1 모달 버튼 -->
+              <button type="button" class="btn btn-outline-warning"
+              data-bs-toggle="modal" data-bs-target="#Reservation-Modal">신청하기
+              </button>
+              <!-- 1모달 시작 -->
+              <div class="modal fade" id="Reservation-Modal" tabindex="-1" 
+                  data-bs-keyboard="false" aria-hidden="true" data-bs-backdrop="static">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">  
+
+                          <div class="modal-header">
+                              <h1 class="modal-title text-warning" id="Reservation-Modal">원데이 클래스 예약</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                          <div class="modal-body">
+                              <h3 class='mt-2 text-darkgreen fw-bold'>서비스 안내</h3>
+                                <p class="ms-3 m-0 text-lead">ㅁ A 코스</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet.</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet consectetur.</p>
+
+                                <p class="ms-3 m-0 text-lead">ㅁ B 코스</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet.</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <p class="ms-5 m-0 text-lead">- Lorem ipsum dolor sit amet consectetur.</p>
+
+                              <h3 class='mt-5 text-darkgreen fw-bold'>예약 시 주의사항</h3>
+                                  <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+                                  <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+                                  <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+
+                              <section class="py-4">
+                                <h3 class="fw-bold">오시는 길</h3>
+                                <p class="text-muted py-3">주소 : 서울 강남구 테헤란로 113 목화밀라트 1308호</p>
+                                <div class="ratio ratio-16x9">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3836449740957!2d127.02737576587134!3d37.4988687798107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1577e9c4dd5%3A0xad59fecc4853550b!2z66qp7ZmU67CA65287Yq47Jik7ZS87Iqk7YWU!5e0!3m2!1sko!2skr!4v1674228442933!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </section>
+
+                          </div>
+
+                          <div class="modal-footer">
+                              <a href="https://whattime.co.kr/teayoung-shop/onedayclass" class="btn btn-warning btn-sm" target="blank">예약하기</a>
+                              <button type="button" class="btn btn-outline-dark btn-sm"
+                                  data-bs-dismiss="modal">취소</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <!-- 모달 끝  -->
             </div>
           </div>
-         <p> 내 삶도 조금 다채로웠으면, 나도 향기로운 사람이었으면하는 생각 한 번쯤 해본 적 없으신가요? 클래스를 통해 여러분이 지닌 향을 알게 되실 거예요.
-        </p>
-        </div>          
+          내 삶도 조금 다채로웠으면, 나도 향기로운 사람이었으면하는 생각 한 번쯤 해본 적 없으신가요? 클래스를 통해 여러분이 지닌 향을 알게 되실 거예요.
+         </div>          
       </div>
 
       <div class="col-md-6">
         <div class="card-hover shadow rounded p-4">
-          <div class="d-flex justify-content-end align-items-center py-3">
-            <div class='text-end me-3'>
-              <h3 class="fw-bold"> MBT(ea)I 차 추천</h3>
-              <p class="text-muted lead">인공지능 Tea 추천 서비스</p>
-              <a class="float-right btn btn-warning" target="blank" href="mbti.html">추천받기</a>
-            </div>
+          <div class="d-flex align-items-center py-3">
             <img src="img/mbti.jpeg" alt=" MBTI로 차 추천 서비스" class="rounded-circle img-fluid">
+            <div class='ms-3'>
+              <h3 class="fw-bold">MBT(ea)I 차 추천</h3>
+              <p class="text-muted lead">인공지능 Tea 추천 서비스</p> 
+              <!-- 2 모달 버튼 -->
+              <button type="button" class="btn btn-outline-warning"
+              data-bs-toggle="modal" data-bs-target="#mbti-Modal">추천받기
+              </button>
+
+              <!-- 2모달 시작 -->
+                <div class="modal fade " id="mbti-Modal" tabindex="-1" 
+                    data-bs-keyboard="false" aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">  
+                            <div class="modal-header">
+                                <h1 class="modal-title text-warning" id="mbti-Modal">MBT(ea)I 차 추천</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+
+                                <div class="modal-body ">
+                                  <h3 class='mt-2 text-darkgreen fw-bold'>이용방법</h3>
+                                    <p class="ms-5 m-0 text-lead">1. Lorem ipsum dolor sit amet.</p>
+                                    <p class="ms-5 m-0 text-lead">2. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                    <p class="ms-5 m-0 text-lead">3. Lorem ipsum dolor sit amet consectetur.</p>
+
+                                  <h3 class='mt-5 text-darkgreen fw-bold'>안내사항</h3>
+                                      <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+                                      <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+                                      <p class="ms-3 m-1 text-lead">ㅁ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quod!</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-dark btn-sm"
+                                    data-bs-dismiss="modal">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- 모달 끝  -->
+            </div>
           </div>
-          내 성격과 취향에 알맞는 나의 MBT(ea)I는 무엇일까요?
-          티앤영에서 알려주는 티 큐레이션을 통해 조금 더 쉽고 재밌게 차에 입문하게 될거예요.
+          내 성격과 취향에 알맞는 나의 MBT(ea)I는 무엇일까요? 티앤영에서 알려주는 티 큐레이션을 통해 조금 더 쉽고 재밌게 차에 입문하게 될거예요.
           </div>          
         </div>
       </div>
@@ -343,7 +424,7 @@
               <i class="bi bi-building-fill fs-5 text-warning"></i>
               <h3 class="fw-bold fs-5 py-2">주소</h3>
               <hr>
-              <p class="text-muted">서울시 강남구 테헤란로 113 목화밀라트 1308</p>
+              <p class="text-muted">서울 강남구 테헤란로 113 목화밀라트 1308</p>
           </div>
       </div>
     </div>
